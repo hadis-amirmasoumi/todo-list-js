@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+.list{
+padding-left: 50px;
+height: 45px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+gap: 30PX;
+background-color: white;
+border-bottom: 3px solid #acb8c5;
+border-left: 3px solid #acb8c5;
+border-radius: 20px;
+}
+.div-tc{
+    display: flex;
+    gap: 20px;
+}
+.img{
+    width: 20px;
+    height: 20px;
+    margin-right: 50px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+.span{
+    margin-top: 3px;
+    font-size: 20px;
+    color: #5e6670;
+}
+.checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #848f9b;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox::before {
+    content: "✓";
+    color: white;
+    transform: scale(0);
+    transition: .2s;
+    font-size: 14px;   
+}
+
+.checkbox:checked {
+    background: #848f9b;
+    transition: 0.4s;
+}
+.checkbox:checked +span{
+    color: #8893a1;
+    text-decoration: line-through;
+    transition: 0.4s;
+}
+.checkbox:checked::before {
+    transform: scale(1);
+}
+

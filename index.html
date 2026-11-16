@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body class="p-5 bg-linear-to-r from-[#bfc4cc] via-[#dce3e6] to-[#f3f6fa] ">
+
+<div class=" flex justify-between">
+  <div class="fixed top-0 right-0 w-64 h-screen bg-white shadow-lg text-2xl pl-5 pt-5 opacity-0
+  translate-x-full transition-all duration-300" id="sildebar" >
+  <p class="cursor-pointer">Log In</p> <br>
+  <p class="cursor-pointer">Mode</p> <br>
+  <p class="cursor-pointer" id="clearall2">Clear All Tasks</p> 
+</div>
+
+  <h1 class=" lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-medium text-[#5e6670] flex gap-2.5 ">To-Do List
+    <img src="./icons8-book-50.png" alt="" class="lg:w-12 lg:h-12  md:w-10 md:h-10 sm:w-8 sm:h-8 w-6 h-6 mt-2.5">
+  </h1>
+
+
+
+  <div>
+      <ul class=" flex gap-10 text-2xl text-[#5e6670]">
+      <li id="count">Tasks : 0</li>
+      <img src="./svgexport-9.svg" alt="" class="block md:hidden cursor-pointer " id="sekhat">
+      <li id="clearall" class="cursor-pointer hidden md:block hover:shadow-xl shadow-gray  rounded-2xl">Clear All Tasks </li>
+      <li id="changemode" class="cursor-pointer hidden md:block hover:shadow-xl shadow-gray rounded-2xl">Mode</li>
+      <li class=" hidden lg:block hover:shadow-xl shadow-gray cursor-pointer rounded-2xl">Log In</li>
+      </ul>
+  </div>
+  </div>
+
+  <div class="flex justify-center items-center mt-40 ">
+    <div class="w-230 h-100  rounded-3xl  ">
+      <div class=" flex justify-center  transition-all duration-500  w-full ">
+        <input type="text" class=" w-[85%] h-12 rounded-l-3xl pl-5 outline-none
+        bg-white ">
+        <button class=" w-[15%] bg-[#848f9b] text-white rounded-r-3xl cursor-pointer
+        hover:shadow-xl shadow-gray">Add Task</button>
+      </div>
+        <ul id="tasklist" class=" mt-5 space-y-4"></ul>
+    </div>
+  </div>
+
+<script src="./index.js"></script>
+</body>
+</html>
